@@ -33,7 +33,74 @@
   font-size: 30px;
 
   color: white;
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lora-navbar {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lora-texts {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.navPages {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.meeting {
+  display: flex;
+  column-gap: 8px;
+  height: 40px;
+  font-size: 14px;
+  align-items: center;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 20px;
+}
+
+.meeting:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.portfolio {
+  display: flex;
+  column-gap: 8px;
+  height: 40px;
+  font-size: 14px;
+  align-items: center;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 20px;
+}
+.portfolio:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.logoRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  height: 30%;
+  background-color: #222;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.iconImageRight {
+  width: 30px;
+  height: 30px;
 }

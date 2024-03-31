@@ -3,10 +3,10 @@ import "./loader.css";
 
 function Loader() {
   const lines = [
-    "I am Afraz Ahmed, a Software Engineer!",
-    "I like to think, code and execute",
-    "Welcome to my personal portfolio",
-    "and have a look at my tech life.",
+    "Hello World, This is Afraz Ahmed.",
+    // "Afraz likes to think, code and execute",
+    // "Welcome to his personal portfolio",
+    "Have a look at my tech life!",
   ];
 
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
