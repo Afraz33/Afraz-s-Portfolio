@@ -5,12 +5,13 @@ import "./App.css";
 import Loader from "./components/loader/Loader";
 import Home from "./components/pages/Home";
 import Chatbot from "./components/chatbot/Chatbot";
+import CalendlyPage from "./components/pages/Calendly";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 10500);
+    }, 10);
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,6 +35,8 @@ function App() {
             <Loader />
           </div>
         )}
+        {/* <Home />
+        <CalendlyPage /> */}
       </div>
     </>
   );

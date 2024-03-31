@@ -1,0 +1,12 @@
+.ProfileDiv {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  right: 2.2%;
+  background-color: #222;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid white;
+}
