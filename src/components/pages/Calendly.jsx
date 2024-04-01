@@ -1,32 +1,30 @@
-import { useEffect } from "react";
-function CalendlyPage() {
-  const applyDarkMode = () => {
-    const iframe = document.querySelector(".calendly-inline-widget iframe");
-    if (iframe) {
-      iframe.contentDocument.documentElement.style.backgroundColor = "#333"; // Change background color
-      iframe.contentDocument.documentElement.style.color = "#fff"; // Change text color
-    }
-  };
+import Navbar from "../navbar/Navbar";
 
-  // Apply dark mode styles when component mounts
-  useEffect(() => {
-    applyDarkMode();
-  }, []);
+function CalendlyPage() {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <iframe
-        style={{ width: "70%", height: "80%", margin: "auto" }}
-        className="calendly-inline-widget"
-        src="https://calendly.com/afraz3301/30min"
-      ></iframe>
+    <div style={{ width: "100%", height: "100%", backgroundColor: "black" }}>
+      <Navbar />
+      <div
+        style={{
+          width: "100%",
+          height: "calc(100vh - 100px)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <iframe
+          style={{
+            width: "70%",
+            height: "80%",
+            margin: "auto",
+            borderRadius: "20px",
+          }}
+          className="calendly-inline-widget"
+          src="https://calendly.com/afraz3301/30min"
+        ></iframe>
+      </div>
     </div>
   );
 }
