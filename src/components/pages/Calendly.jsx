@@ -2,12 +2,17 @@ import Navbar from "../navbar/Navbar";
 
 function CalendlyPage() {
   return (
-    <div style={{ width: "100%", height: "100%", backgroundColor: "black" }}>
-      <Navbar />
+    <div
+      style={{
+        width: "100%",
+        height: "calc(100vh - 100px)",
+        backgroundColor: "black",
+      }}
+    >
       <div
         style={{
           width: "100%",
-          height: "calc(100vh - 100px)",
+          height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

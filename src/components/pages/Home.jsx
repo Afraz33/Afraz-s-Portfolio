@@ -8,16 +8,12 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 10);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <BackgroundTheme />
-
-      {!isLoading && <Navbar />}
-
+    <div style={{ width: "100%", height: "calc(100vh - 100px)" }}>
       {isLoading && (
         <div
           style={{

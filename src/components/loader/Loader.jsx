@@ -6,7 +6,7 @@ function Loader() {
     "Hello World, This is Afraz Ahmed.",
     // "Afraz likes to think, code and execute",
     // "Welcome to his personal portfolio",
-    "Have a look at my tech life!",
+    // "Have a look at my tech life!",
   ];
 
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
@@ -16,7 +16,7 @@ function Loader() {
       setCurrentLineIndex((prevIndex) =>
         prevIndex === lines.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change the duration as needed
+    }, 4000); // Change the duration as needed
 
     return () => clearInterval(interval);
   }, []);

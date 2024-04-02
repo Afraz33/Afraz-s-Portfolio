@@ -4,15 +4,22 @@ import logo from "../../assets/images/A.png";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import InfoIcon from "@mui/icons-material/Info";
 import ProfileModal from "../profiles/Profiles";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [openProfile, setOpenProfile] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const page = location.pathname.split("/")[1];
   return (
     <>
       <nav className={navbarStyles.navbar}>
-        <div className={navbarStyles.logo}>
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className={navbarStyles.logo}
+        >
           {/* <img className={navbarStyles.iconImage} src={logo}></img> */}
 
           <h2 className={navbarStyles.name}>afraz.dev</h2>
@@ -22,12 +29,23 @@ function Navbar() {
             onClick={() => {
               navigate("book-a-meet");
             }}
-            className={navbarStyles.meeting}
+            className={
+              navbarStyles.meeting +
+              (page === "book-a-meet" ? " " + navbarStyles.active : "")
+            }
           >
             <VideoCallIcon sx={{ fontSize: "30px" }} />
             <p>Book a meeting</p>
           </div>
-          <div className={navbarStyles.portfolio}>
+          <div
+            onClick={() => {
+              navigate("about-portfolio");
+            }}
+            className={
+              navbarStyles.portfolio +
+              (page === "about-portfolio" ? " " + navbarStyles.active : "")
+            }
+          >
             <InfoIcon sx={{ fontSize: "25px" }} />
             <p>About the portfolio</p>
           </div>

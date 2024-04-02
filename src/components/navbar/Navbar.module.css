@@ -19,7 +19,9 @@
   column-gap: 5px;
   height: 30%;
 }
-
+.logo:hover {
+  cursor: pointer;
+}
 .icon {
   width: 70px;
   height: 70px;
@@ -68,6 +70,7 @@
   padding: 25px;
   background-color: #222;
   border-radius: 20px;
+  border: 1px solid #222;
 }
 
 .meeting:hover {
@@ -84,12 +87,16 @@
   padding: 25px;
   background-color: #222;
   border-radius: 20px;
+  border: 1px solid #222;
 }
 .portfolio:hover {
   background-color: #333;
   cursor: pointer;
 }
 
+.active {
+  border: 1px solid #2e88f6;
+}
 .logoRight {
   display: flex;
   justify-content: center;
